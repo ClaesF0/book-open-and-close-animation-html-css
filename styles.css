@@ -13,8 +13,8 @@ body {
 
 .container {
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 33%;
+  left: 40%;
   transform: translate (-50%, -50%);
 }
 
@@ -59,12 +59,39 @@ body {
   top: 0;
   left: 0;
   box-sizing: border-box;
-  padding: 20px 0 40px 0;
+  /*padding: 20px 0 40px 0;*/
   background-color: peru;
+  background: url(crumpled-old-paper-2602-1.png) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 .details p,
 h2 {
   padding: 10px;
   color: #282829;
+  color: black;
+  font-family: Almendra SC;
+}
+
+#fairy {
+  padding-left: 25%;
+}
+
+.fairy img {
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+  -webkit-transition: all 2s ease;
+  opacity: 50%;
+}
+
+.fairy img:hover {
+  filter: grayscale(0%);
+  filter: gray;
+  -webkit-filter: grayscale(0%);
+  filter: none;
+  transition: 2s ease;
+  opacity: 100%;
 }
